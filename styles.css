@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #333;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f0f8ff, #ffe6a6);
+  
+}
+
+.container {        
+    flex: 1;
+    max-width:600px;
+    background-color: #f0f8ff;
+    padding: 20px;
+    max-height: 40vh;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.quote-section {
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 20px;
+     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+h1{
+    color:green;
+    font-weight: bold;
+}
+#quote-display {
+    font-size: 18px;
+    margin-bottom: 20px;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-style: italic;
+    transition: opacity 0.5s ease-in-out;
+    font-family: 'cursive', Arial;
+    opacity: 1;
+}
+.fade-out {
+    opacity: 0;
+}
+#generate-quote {
+    background-color:red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    max-width: 200px;
+    margin-top: 20px;
+}
+#generate-quote:hover {
+    background-color: darkred;
+    box-shadow: 0 0 10px gold;
+}
+
+
+.action-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.action-buttons button {
+    background-color: green;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* space between icon and text if needed */
+
+}
+.action-buttons button:hover {
+    background-color: darkgreen;
+}
+
+.action-buttons button svg {
+    width: 24px;     /* adjust size */
+    height: 24px;    /* adjust size */
+    vertical-align: middle;
+    fill: white;     /* match button text color */
+}
+.action-buttons button:hover svg {
+    fill: #ffd700; /* gold color on hover for festive feel */
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;  /* space above and below */
+    font-size: 14px;
+    color: #666;
+}
+footer p a {
+    color: #666;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer p a:hover {
+    color: #ffd700; /* gold color on hover */
+}
+
+footer .icons {
+    color: #666;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+footer .icons:hover {
+    color: #ffd700; /* gold color on hover */
+}
