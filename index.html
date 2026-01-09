@@ -1,39 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Christmas Quote Generator</title>
-    <link href="styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
     <!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Main Container -->
     <div class="container">
-        <h1>Random Christmas Quote Generator</h1>
-        <div class="quote-section">
-            <div id="quote-display" class="quote-display">
-                <p>Your Christmas quote will appear here!</p>
-            </div>
-            <button id="generate-quote">Generate Quote</button>
-            <div class="action-buttons">
-                <button id="tweet-quote" aria-label="Tweet Quote"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Tweet Quote</title><path d="M6,5.75L10.25,10H7V16H13.5L15.5,18H7A2,2 0 0,1 5,16V10H1.75L6,5.75M18,18.25L13.75,14H17V8H10.5L8.5,6H17A2,2 0 0,1 19,8V14H22.25L18,18.25Z" /></svg></button>
-                <button id="copy-quote" aria-label="Copy Quote"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Copy Quote</title><path d="M19,3H14.82C14.4,1.84 13.3,1 12,1C10.7,1 9.6,1.84 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3" /></svg></button>
-                <button id="share-quote" aria-label="Share Quote"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Share Quote</title><path d="M21,12L14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12Z" /></svg></button>
-            </div>
+      <h1>Random Christmas Quote Generator</h1>
+      <div class="quote-section">
+        <div id="quote-display" class="quote-display">
+          <p>Your Christmas quote will appear here!</p>
         </div>
-      
-
+        <button id="generate-quote">Generate Quote</button>
+        <div class="action-buttons">
+          <button id="tweet-quote" aria-label="Tweet Quote">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <title>Tweet Quote</title>
+              <path
+                d="M6,5.75L10.25,10H7V16H13.5L15.5,18H7A2,2 0 0,1 5,16V10H1.75L6,5.75M18,18.25L13.75,14H17V8H10.5L8.5,6H17A2,2 0 0,1 19,8V14H22.25L18,18.25Z"
+              />
+            </svg>
+          </button>
+          <button id="copy-quote" aria-label="Copy Quote">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <title>Copy Quote</title>
+              <path
+                d="M19,3H14.82C14.4,1.84 13.3,1 12,1C10.7,1 9.6,1.84 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3"
+              />
+            </svg>
+          </button>
+          <button id="share-quote" aria-label="Share Quote">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <title>Share Quote</title>
+              <path
+                d="M21,12L14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
-        <footer>
-        <p><a href="https://www.davidgodspowerajala.com" target="_blank">David Godspower Ajala (D.G.A.) &copy; <span id="year"></span></a></p><br>
-            <a href="https://www.linkedin.com/in/david-ajala-a93b862a1/" target="_blank"><i class="fab fa-linkedin icons" id="linkedin"></i></a>
-            <a href="https://web.facebook.com/facebook.comDavidGodpowerAjalaDGA/" target="_blank"><i class="fab fa-facebook icons" id="facebook"></i></a>
-            <a href="mailto:ajaladavid11@gmail.com" target="_blank"><i class="fas fa-envelope icons" id="gmail"></i></a>
-            <a href="https://x.com/ajala28981" target="_blank"><i class="fab fa-x icons" id="x"></i></a>&nbsp;&nbsp;&nbsp;
+    <footer>
+      <p>
+        <a href="https://www.davidgodspowerajala.com" target="_blank"
+          >David Godspower Ajala (D.G.A.) &copy; <span id="year"></span
+        ></a>
+      </p>
+      <br />
+      <a
+        href="https://www.linkedin.com/in/david-godspower-ajala/"
+        target="_blank"
+        ><i class="fab fa-linkedin icons" id="linkedin"></i
+      ></a>
+      <a
+        href="https://web.facebook.com/facebook.comDavidGodpowerAjalaDGA/"
+        target="_blank"
+        ><i class="fab fa-facebook icons" id="facebook"></i
+      ></a>
+      <a href="mailto:ajaladavid11@gmail.com" target="_blank"
+        ><i class="fas fa-envelope icons" id="gmail"></i
+      ></a>
+      <a href="https://x.com/ajala28981" target="_blank"
+        ><i class="fab fa-x icons" id="x"></i></a
+      >&nbsp;&nbsp;&nbsp;
     </footer>
-    
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
